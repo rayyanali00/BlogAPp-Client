@@ -44,7 +44,7 @@ const Signin = () =>{
             else{
                 localStorage.setItem("accessToken",resp.data.token)
                 // cookies.set("accessToken",resp.data.token)
-                window.location.href='/'
+                window.location.href='/blogs'
             }
         })
     }

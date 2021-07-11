@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Prompt:wght@100&display=swap');
+.navbar{
+    background-color: white !important;
+    box-shadow: 3px 5px 10px rgb(198, 196, 196) !important;
+}
+.nav-link {
+    color: black !important;
+    font-size: 1.2em;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bolder;
+}
+.navimage{
+    width: auto;
+    height: 40px;
+}

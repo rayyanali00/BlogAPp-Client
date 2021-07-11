@@ -14,7 +14,7 @@ const Navbar = (props) => {
     }
     const [email, setEmail] = useState("");
     useEffect(()=>{
-        axios.get(`http://localhost:3001/user/userdata`,{
+        axios.get(`https://ublog-app.herokuapp.com/user/userdata`,{
             headers:{
               "accessToken":localStorage.getItem("accessToken")
             }

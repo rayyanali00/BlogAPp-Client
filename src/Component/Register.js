@@ -43,7 +43,7 @@ const Signup = () =>{
             email:credentials.email,
             password:credentials.password
         }
-        axios.post('http://localhost:3001/user/signup', postData)
+        axios.post('https://ublog-app.herokuapp.com/user/signup', postData)
         .then((resp)=>{
             console.log(resp.data)
             setErrorMessage({

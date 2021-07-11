@@ -26,7 +26,7 @@ const BlogList = (props) => {
     }
 
     useEffect(()=>{
-            axios.get(`http://localhost:3001/blog`,{
+            axios.get(`https://ublog-app.herokuapp.com/blog`,{
               headers:{
                 "accessToken":localStorage.getItem("accessToken")
               }
@@ -57,7 +57,7 @@ const BlogList = (props) => {
 
     const deleteHandler = (id) =>
     {
-        axios.delete(`http://localhost:3001/blog/${id}`)
+        axios.delete(`https://ublog-app.herokuapp.com/blog/${id}`)
         .then((res)=>{
             console.log("Blog Deleted")
         })
@@ -77,7 +77,7 @@ const BlogList = (props) => {
             return(
                 <div className="col-lg-3 mt-5" key={i._id}>
     <div className="card blog-card">
-      <img src={'http://localhost:3001/'+i.image} className="card-img-top" alt="blog_image" height='200'></img>
+      <img src={'https://ublog-app.herokuapp.com/'+i.image} className="card-img-top" alt="blog_image" height='200'></img>
       <div className="card-body blog-card-body">
         <NavLink exact to={`/detail/${i._id}`} className="text-decoration-none blog-title">{i.title}</NavLink><br/>
         {/* <p className="card-text">{i.description}</p> */}

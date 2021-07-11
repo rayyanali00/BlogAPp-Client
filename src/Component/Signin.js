@@ -33,7 +33,7 @@ const Signin = () =>{
             email:credentials.email,
             password:credentials.password
         }
-        axios.post('http://localhost:3001/user/signin', postData)
+        axios.post('https://ublog-app.herokuapp.com/user/signin', postData)
         .then((resp)=>{
             if(resp.data.err){
                 setErrorMsg({

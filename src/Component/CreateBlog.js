@@ -35,7 +35,7 @@ const [file, setFile] = useState('')
         for(var pair of fd.entries()) {
             console.log(pair[0]+', '+pair[1]);
           }
-        axios.post('http://localhost:3001/blog/createblogs', fd, {
+        axios.post('https://ublog-app.herokuapp.com/blog/createblogs', fd, {
             headers:{
               "accessToken":localStorage.getItem("accessToken")
             }

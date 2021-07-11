@@ -23,7 +23,7 @@ const BlogDetail = (props) => {
     }
 
     useEffect(()=>{
-            axios.get(`http://localhost:3001/blog/${paramID}`,{
+            axios.get(`https://ublog-app.herokuapp.com/blog/${paramID}`,{
               headers:{
                 "accessToken":localStorage.getItem("accessToken")
               }
@@ -50,7 +50,7 @@ const BlogDetail = (props) => {
                 <div className="col-lg-2"></div>
                 <div className="col-lg-8 mt-5" key={blogs._id}>
     <div className="card detail-card">
-      <img src={'http://localhost:3001/'+blogs.image} className="card-img-top" alt="blog_image" height='300'></img>
+      <img src={'https://ublog-app.herokuapp.com/'+blogs.image} className="card-img-top" alt="blog_image" height='300'></img>
       <div className="card-body text-left">
         <h5 className="card-title">{blogs.title}</h5>
         <p className="card-text desc">{blogs.description}</p>

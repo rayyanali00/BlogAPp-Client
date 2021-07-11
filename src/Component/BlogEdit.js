@@ -12,7 +12,7 @@ const BlogEdit = (props) => {
     })
     const [file, setFile] = useState('')
     useEffect(()=>{
-        axios.get(`http://localhost:3001/blog/${paramID}`,{
+        axios.get(`https://ublog-app.herokuapp.com/blog/${paramID}`,{
             headers:{
                 "accessToken":localStorage.getItem("accessToken")
               }
@@ -52,7 +52,7 @@ const BlogEdit = (props) => {
         for(var pair of formData.entries()) {
             console.log(pair[0]+', '+pair[1]);
           }
-        axios.post(`http://localhost:3001/blog/update/${paramID}`,formData,{
+        axios.post(`https://ublog-app.herokuapp.com/blog/update/${paramID}`,formData,{
             headers:{
               "accessToken":localStorage.getItem("accessToken")
             }

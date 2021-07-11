@@ -29,7 +29,7 @@ const Navbar = (props) => {
     return (
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
-                <Link className="navbar-brand" to='/'><img src={SignupImg} className="navimage"/></Link>
+                <Link className="navbar-brand" to='/blogs'><img src={SignupImg} className="navimage"/></Link>
                 <button className="navbar-toggler text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">   
     <i class="fas fa-bars" style={{color:'black', fontSize:`${28}px`}}></i>
@@ -41,13 +41,13 @@ const Navbar = (props) => {
           <a className="nav-link active" aria-current="page" href="#">Home</a>
         </li> */}
                         <li className="nav-item">
-                            <NavLink exact className="nav-link" to='/'>Go to Blogs</NavLink>
+                            <NavLink exact className="nav-link" to='/blogs'>Go to Blogs</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink exact className="nav-link" to='/createblog/'>Create Blog</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to='/signin' onClick={logout}>Logout</NavLink>
+                            <NavLink className="nav-link" to='/' onClick={logout}>Logout</NavLink>
                         </li>
 
                     </ul>

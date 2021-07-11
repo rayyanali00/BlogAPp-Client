@@ -19,11 +19,11 @@ const App = () => {
       <Router>
         <Switch>
         <Route exact path='/signup' component={Register} />
-        <Route exact path='/signin' component={Signin} />
+        <Route exact path='/' component={Signin} />
           <div>
         <Navbar />
         <Route exact path='/detail/:id' component={BlogDetail}/>
-        <Route exact path='/' component={BlogList}/>
+        <Route exact path='/blogs' component={BlogList}/>
         <Route exact path='/update/:id' component={BlogEdit}/>
         <Route exact path='/createblog/' component={CreateBlog}/>
         </div>

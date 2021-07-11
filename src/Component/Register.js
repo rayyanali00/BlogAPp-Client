@@ -51,7 +51,7 @@ const Signup = () =>{
                 message:resp.data.err
             })
             if(resp.status==200){
-                window.location.href="/signin"
+                window.location.href="/"
             }
         })
     }
@@ -84,7 +84,7 @@ const Signup = () =>{
 </div>
 </form>
 <div className="text-center">
-<Link to="/signin">Already a member?</Link>
+<Link to="/">Already a member?</Link>
 </div>
 </div>
 </div>

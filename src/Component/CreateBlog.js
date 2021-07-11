@@ -46,7 +46,7 @@ const [file, setFile] = useState('')
             if (resp.status === 200) {
                 console.log("REDIRECTION avec status => ", resp.status);
 
-                window.location = "/";
+                window.location = "/blogs";
             }
         })
         

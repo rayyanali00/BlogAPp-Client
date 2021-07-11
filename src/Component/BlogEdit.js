@@ -63,7 +63,7 @@ const BlogEdit = (props) => {
         .then((res)=>{
             console.log("Data Updated")
             console.log(res.data)
-            window.location.href = '/'
+            window.location.href = '/blogs'
         })
         .catch(err => console.log(err))
     }
